@@ -1,0 +1,12 @@
+CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    picture VARCHAR (300) NOT NULL,
+    teaching_category VARCHAR(50) NOT NULL,
+    expertise_level VARCHAR(20) NOT NULL
+);
+
+ALTER TABLE users
+ADD COLUMN email_verified TINYINT(1) NOT NULL DEFAULT 0;
